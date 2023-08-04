@@ -9,4 +9,17 @@
     <string name="text_continue">Continue</string>
     <string name="text_enter_valid_mobile">Please enter a valid mobile number</string>
     <string name="text_hint_otp">9999</string>
+    <string name="text_notes">Notes</string>
+    <string name="text_personal_messages">Personal messages to you</string>
+    <string name="text_interested_in_you">Interested In You</string>
+    <string name="text_premium_member">Premium members can\nview all their likes at once</string>
+    <string name="text_upgrade">Upgrade</string>
+    <string name="text_discover">Discover</string>
+    <string name="text_matches">Matches</string>
+    <string name="text_profile">Profile</string>
+    <string name="text_enter_the_notp">Enter The\nOTP</string>
+    <string name="text_retry">retry</string>
+    <string name="text_something_went_wrong">something went wrong</string>
+    <string name="text_please_enter_a_valid_otp">please enter a valid otp</string>
+    <string name="text_tap_to_review">Tap to review 50+ notes</string>
 </resources>

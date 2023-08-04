@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/discover_dest"
+        android:icon="@drawable/discover_icon_state"
+        android:title="@string/text_discover"/>
+
+    <item android:id="@+id/notes_dest"
+        android:icon="@drawable/mail_icon_state"
+        android:title="@string/text_notes"/>
+
+    <item
+        android:id="@+id/msg_dest"
+        android:icon="@drawable/msg_icon_state"
+        android:title="@string/text_matches"/>
+
+    <item
+        android:id="@+id/profile_dest"
+        android:icon="@drawable/profile_icon_state"
+        android:title="@string/text_profile"/>
+</menu>

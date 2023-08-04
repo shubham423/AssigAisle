@@ -2,6 +2,7 @@ package com.example.assigaisle.data.repository
 
 import com.example.assigaisle.data.models.LoginRequest
 import com.example.assigaisle.data.models.LoginResponse
+import com.example.assigaisle.data.models.NotesResponse
 import com.example.assigaisle.data.models.VerifyOtpRequest
 import com.example.assigaisle.data.models.VerifyOtpResponse
 import com.example.assigaisle.data.network.ApiService
@@ -18,5 +19,9 @@ class DataRepositoryImpl @Inject constructor(private val apiService: ApiService)
 
     override suspend fun verifyOtp(verifyOtpRequest: VerifyOtpRequest): Response<VerifyOtpResponse> {
         return apiService.verifyOtp(verifyOtpRequest)
+    }
+
+    override suspend fun getNotes(authToken: String): Response<NotesResponse> {
+        return apiService.getNotes(authToken)
     }
 }

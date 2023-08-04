@@ -1,5 +1,6 @@
 package com.example.assigaisle.presentation.login
 
+import androidx.fragment.app.viewModels
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.assigaisle.data.models.LoginRequest
@@ -18,6 +19,7 @@ class LoginViewModel @Inject constructor(private val dataRepository: DataReposit
     val loginState = _loginState.asStateFlow()
     fun login(loginRequest: LoginRequest){
         viewModelScope.launch {
+            _loginState.emit(Resource.Loading())
             try {
                 val response=dataRepository.login(loginRequest)
                 if (response.isSuccessful && response.body()?.status==true){
@@ -29,6 +31,12 @@ class LoginViewModel @Inject constructor(private val dataRepository: DataReposit
             }catch (e:Exception){
                 _loginState.emit(Resource.Error(message = "${e.message}"))
             }
+        }
+    }
+
+    fun resetState(){
+        viewModelScope.launch {
+            _loginState.emit(null)
         }
     }
 }

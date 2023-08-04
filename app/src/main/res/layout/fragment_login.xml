@@ -13,6 +13,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="80dp"
         android:text="@string/text_get_otp"
+        android:textStyle="bold"
         android:textColor="@color/black"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,6 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="8dp"
+        android:textStyle="bold"
         android:text="@string/text_enter_your_phone_number"
         android:textColor="@color/black"
         android:textSize="30sp"
@@ -36,23 +38,38 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="12dp"
+        android:paddingHorizontal="8dp"
         android:background="@drawable/edittext_rounded_border"
         android:padding="10dp"
+        android:hint="@string/text_country_code_hint"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_enter_phone_number" />
 
     <EditText
         android:id="@+id/et_mobile_number"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="12dp"
-        android:layout_marginEnd="48dp"
+        android:paddingHorizontal="8dp"
         android:background="@drawable/edittext_rounded_border"
+        android:hint="@string/text_mobile_number_hint"
         android:padding="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/et_country_code"
         app:layout_constraintTop_toBottomOf="@+id/tv_enter_phone_number" />
+
+    <Button
+        android:id="@+id/btn_continue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_rounded"
+        android:backgroundTint="#F9CB10"
+        android:text="@string/text_continue"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_country_code" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -31,7 +31,7 @@
         android:background="@android:color/white"
         app:layout_constraintTop_toBottomOf="@id/divider"
         app:labelVisibilityMode="labeled"
-        app:itemRippleColor="@null"
+        app:itemRippleColor="@color/white"
         app:menu="@menu/bottom_nav_menu" />
 
     <View

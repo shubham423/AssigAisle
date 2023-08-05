@@ -13,9 +13,8 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="80dp"
         android:text="@string/text_get_otp"
-        android:textStyle="bold"
         android:textColor="@color/black"
-        android:textSize="18sp"
+        android:textSize="22sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -34,7 +33,7 @@
 
     <EditText
         android:id="@+id/et_country_code"
-        android:layout_width="60dp"
+        android:layout_width="70dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="12dp"
